@@ -73,7 +73,6 @@ public class Card extends StackPane {
         this.setMinWidth(92);
         this.getChildren().add(unusedCard);
 
-        //Set Visibility
         this.setVisible(true);
         ds = new DropShadow();
         ds.setOffsetY(20);
@@ -100,10 +99,9 @@ public class Card extends StackPane {
         setArtistInfo(artistInfo);
         setCardAndImageSize(92, 92);
 
-        //Add nodes to StackPane
+        //Add Nodes to StackPane
         this.getChildren().add(backOfCard);
 
-        //Set Visibility
         this.setVisible(true);
 
         Random var = new Random();

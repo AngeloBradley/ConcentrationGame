@@ -68,7 +68,7 @@ public class GamePane extends BorderPane {
     private Card cardTwo;
     private BorderPane centerPane;
     private int gameTimer = 0;
-    private BackgroundVideo backgroundVideo;
+    //private BackgroundVideo backgroundVideo;
     private StackPane centerBackStack;
     private Label levelsLabel;
     private boolean timerRunning = false;
@@ -317,10 +317,10 @@ public class GamePane extends BorderPane {
 
             if (e.getSource() instanceof ComboBox) {
                 centerBackStack.getChildren().remove(0);
-                backgroundVideo = null;
+                //backgroundVideo = null;
 
-                backgroundVideo = new BackgroundVideo();
-                centerBackStack.getChildren().add(0, backgroundVideo.generateVideoBackground());
+                //backgroundVideo = new BackgroundVideo();
+                //centerBackStack.getChildren().add(0, backgroundVideo.generateVideoBackground());
                 centerBackStack.setBlendMode(BlendMode.MULTIPLY);
                 centerBackStack.setCache(true);
                 centerBackStack.setCacheHint(CacheHint.SPEED);
